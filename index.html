@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website - Sendy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="browser">
+    <div class="browser-row">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="browser-title">My Website</div>
+    </div>
+    <div class="address-row">
+      <span class="lock">🔒</span>
+      <span>www.mywebsite.com</span>
+    </div>
+  </header>
+
+  <main class="frame">
+    <nav class="nav">
+      <div class="logo" title="Logo">
+        <img src="assets/logo_revo.jpg" alt="Revo logo" />
+      </div>
+
+      <div class="navbox">
+        <a class="navbtn" href="#home">Home</a>
+        <a class="navbtn" href="#profile">Our Profile</a>
+        <a class="navbtn" href="#portfolio">Portfolio</a>
+        <a class="navbtn" href="#message">Message Us</a>
+      </div>
+    </nav>
+
+    <section id="home" class="section hero">
+      <h1 class="hero-title">
+        Hi <span id="displayName">Sendy</span>, Welcome To Website
+      </h1>
+      <p class="hero-subtitle">Ini adalah website latihan pertama</p>
+
+    <div class="hero-placeholder hero-image">
+        <img src="assets/banner.jpg" alt="Banner" />
+    </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Our Headquarter</h2>
+
+      <div class="hq">
+        <div class="hq-item">
+          <div class="hq-circle"></div>
+          <div class="hq-city">Jakarta</div>
+        </div>
+        <div class="hq-item">
+          <div class="hq-circle"></div>
+          <div class="hq-city">Bandung</div>
+        </div>
+        <div class="hq-item">
+          <div class="hq-circle"></div>
+          <div class="hq-city">Surabaya</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="section">
+      <h2 class="section-title">Our Profile</h2>
+
+      <div class="profile-banner">
+        <div class="profile-banner-inner">
+          <img src="assets/profile.png" class="profile-photo" alt="Profile" />
+          <div class="profile-banner-text">
+            <div class="pb-title">Sendy Ferry Setyawan</div>
+            <div class="pb-subtitle">Mahasiswa S1 Informatika, Universitas Teknologi Yogyakarta</div>
+            <div class="pb-subtitle">Fokus: Web & Mobile, Problem Solving, dan proyek kreatif</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-grid">
+        <article class="card">
+          <h3>About the “Company”</h3>
+          <p>
+            Ini “company profile” versi tugas, tapi kita bikin serius: personal portfolio yang nunjukin
+            kemampuan dasar HTML, CSS, dan JavaScript. Nama brand: <b>Sendy Studio</b> (anggap aja).
+          </p>
+          <ul class="bullets">
+            <li>Nama: Sendy Ferry Setyawan</li>
+            <li>Role: S1 Informatika (UTY)</li>
+            <li>Minat: Web dev, UI sederhana, konten kreatif</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Vision</h3>
+          <p>
+            Jadi software engineer yang ga cuma “bisa jalan”, tapi juga rapi, jelas, dan punya taste desain.
+            Bikin produk yang kepake beneran.
+          </p>
+          <h3 style="margin-top:14px;">Mission</h3>
+          <ul class="bullets">
+            <li>Ngoding konsisten, bukan pas mood doang.</li>
+            <li>Latihan bikin UI yang rapi dan responsive.</li>
+            <li>Biasain validasi input dan struktur proyek yang bener.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <h2 class="section-title">Portfolio</h2>
+
+      <div class="portfolio-grid">
+        <div class="p-card">
+            <div class="p-thumb p-thumb-img">
+            <img src="assets/portfolio1.png" alt="Portfolio 1" /></div>
+            <div class="p-title">Website Company Profile (Mockup Slicing)</div>
+            <div class="p-desc">HTML + CSS + JS validasi form, responsive, publish.</div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-thumb">Project 02</div>
+          <div class="p-title">Mini Web Interaktif</div>
+          <div class="p-desc">Latihan DOM, input, output, dan layout rapi.</div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-thumb">Project 03</div>
+          <div class="p-title">UI Layout Practice</div>
+          <div class="p-desc">Navbar, sectioning, grid, dan responsive basic.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="message" class="section">
+      <h2 class="section-title">Message Us</h2>
+
+      <div class="message-grid">
+        <form id="messageForm" class="form" novalidate>
+          <div class="row">
+            <label for="name">Nama</label>
+            <span class="colon">:</span>
+            <input id="name" name="name" type="text" placeholder="Nama" />
+          </div>
+
+          <div class="row">
+            <label for="dob">Tanggal Lahir</label>
+            <span class="colon">:</span>
+            <input id="dob" name="dob" type="date" />
+          </div>
+
+          <div class="row">
+            <label>Jenis Kelamin</label>
+            <span class="colon">:</span>
+            <div class="radio-wrap">
+              <label class="radio">
+                <input type="radio" name="gender" value="Laki-Laki" />
+                Laki-Laki
+              </label>
+              <label class="radio">
+                <input type="radio" name="gender" value="Perempuan" />
+                Perempuan
+              </label>
+            </div>
+          </div>
+
+          <div class="row row-textarea">
+            <label for="messageText">Pesan</label>
+            <span class="colon">:</span>
+            <textarea id="messageText" name="messageText" rows="4" placeholder="Pesan"></textarea>
+          </div>
+
+          <div id="errorBox" class="error-box" aria-live="polite"></div>
+
+          <button class="btn-submit" type="submit">Submit</button>
+        </form>
+
+        <aside class="output">
+          <div class="output-inner">
+            <div class="output-text" id="outputText">
+              <div><b>Current time</b> : -</div>
+              <br />
+              <div><b>Nama</b> : -</div>
+              <div><b>Tanggal Lahir</b> : -</div>
+              <div><b>Jenis Kelamin</b> : -</div>
+              <div><b>Pesan</b> : -</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Created By Sendy</span>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
